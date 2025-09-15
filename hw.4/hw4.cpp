@@ -13,7 +13,7 @@ public:
 		strcpy_s(model, strlen(m) + 1, m);
 		color = new char[strlen(c) + 1];
 		strcpy_s(color, strlen(c) + 1, c);
-		price = a;
+		price = p;
 	}
 	void Print()
 	{
@@ -28,6 +28,12 @@ public:
 };
 
 int main() {
-	Laptop obj1("Asus", "red", 5000);
+	Laptop obj1("Asus", "Red", 35000);
 	obj1.Print();
+
+	Laptop obj2("Lenovo", "Blue", 23000);
+	obj2.Print();
+
+	Laptop obj3("Dell", "Grey", 45500);
+	obj3.Print();
 }
